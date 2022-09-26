@@ -13,10 +13,16 @@ import {TbTruckDelivery} from "react-icons/tb"
 import {GiCardPickup} from "react-icons/gi"
 import {GoVerified} from "react-icons/go"
 import {BsClipboardCheck} from "react-icons/bs"
+import Select from 'react-select'
 
 
 
 function Home() {
+  const options = [
+    { value: 'yes', label: 'Yes' },
+    { value: 'no', label: 'No' },
+    
+  ]
   return (
     <div className="home-bod">
       <div className="hbl">
@@ -104,10 +110,11 @@ function Home() {
             <h3>Refiner</h3>
           </div>
         </div>
-        <div className="gdi1">
-          <input type="number" placeholder="Settlement in days" />
-          <input type="number" placeholder="Limit in grams" />
-          <input type="number" placeholder="Applicable(yes/no)" />
+        <div className="gdi2">
+          <input className="i1" type="number" placeholder="Settlement in days" />
+          <input className="i2" type="number" placeholder="Limit in grams" />
+          <Select className="sb" options={options} />
+          {/* <input type="number" placeholder="Applicable(yes/no)" /> */}
         </div>
         <div className="btnsec">
 <button>Add Merchant</button>
