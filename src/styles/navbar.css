@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 .nvb{
+    font-family: 'Montserrat', sans-serif;
     height: 60px;
     display: 100%;
     padding: 10px;
